@@ -1,0 +1,70 @@
+{
+	"id": "5cc68ba0-ea1e-48a4-34dd-7b1448386ea0",
+	"name": "CrudParentChild",
+	"description": "",
+	"order": [
+		"0d2ada34-b7fd-6848-5a8b-b1073cbe0a82",
+		"7a40bab9-6615-e01d-83c3-73d1c452a9ef"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1515148897311,
+	"owner": "3426983",
+	"public": false,
+	"requests": [
+		{
+			"id": "0d2ada34-b7fd-6848-5a8b-b1073cbe0a82",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/students",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "5cc68ba0-ea1e-48a4-34dd-7b1448386ea0",
+			"data": [],
+			"dataMode": "raw",
+			"name": "localhost:8080/students",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1515158613877,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"name\":\"Kiran\",\n\t\"department\":\"CS\",\n\t\"addresses\":[\n\t\t{\n\t\t\t\"line1\":\"29th main road\",\n\t\t\t\"line2\":\"J P Nagar\",\n\t\t\t\"city\":\"bengalore\"\n\t\t}]\n}"
+		},
+		{
+			"id": "7a40bab9-6615-e01d-83c3-73d1c452a9ef",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8080/students",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "5cc68ba0-ea1e-48a4-34dd-7b1448386ea0",
+			"data": null,
+			"dataMode": "params",
+			"name": "localhost:8080/students",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1515158624802,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
