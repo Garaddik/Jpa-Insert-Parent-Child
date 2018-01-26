@@ -1,9 +1,12 @@
 package com.dot360.CrudWithChild.model;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Address {
@@ -17,6 +20,18 @@ public class Address {
 	private String line2;
 
 	private String city;
+
+	@ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "student_id")
+	private Student student;
+
+	public Student getStudent() {
+		return student;
+	}
+
+	public void setStudent(Student student) {
+		this.student = student;
+	}
 
 	public int getAddressId() {
 		return addressId;
