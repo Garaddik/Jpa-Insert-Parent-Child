@@ -1,0 +1,11 @@
+package com.dot360.CrudWithChild.dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.dot360.CrudWithChild.model.Address;
+
+@Repository
+public interface AddressRepository extends JpaRepository<Address, Integer> {
+
+}

@@ -1,7 +1,7 @@
 package com.dot360.CrudWithChild.model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -21,8 +21,8 @@ public class Address {
 
 	private String city;
 
-	@ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "student_id")
+	@ManyToOne(cascade = CascadeType.PERSIST)
+	@JoinColumn(name = "student_id")
 	private Student student;
 
 	public Student getStudent() {

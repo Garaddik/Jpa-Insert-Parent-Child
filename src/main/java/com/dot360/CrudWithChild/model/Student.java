@@ -4,7 +4,6 @@ import java.util.List;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -21,7 +20,7 @@ public class Student {
 
 	private String department;
 
-	@OneToMany(mappedBy = "student", cascade = CascadeType.ALL, orphanRemoval = true,fetch = FetchType.LAZY)
+	@OneToMany(mappedBy = "student", cascade = CascadeType.PERSIST)
 	private List<Address> addresses;
 
 	public int getStudent_id() {
